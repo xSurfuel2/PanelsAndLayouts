@@ -389,7 +389,7 @@
           </tabbedpane>
         </children>
       </grid>
-      <grid id="20856" binding="buttonBar" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+      <grid id="20856" binding="buttonBar" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="2">
         <constraints border-constraint="South"/>
         <properties/>
         <border type="none"/>
