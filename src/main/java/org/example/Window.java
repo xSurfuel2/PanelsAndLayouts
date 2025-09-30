@@ -39,6 +39,8 @@ public class Window {
     private JLabel Activo;
     private JLabel Notas;
     private JTextArea textArea1;
+    private JTextArea estoEsUnResumenTextArea;
+    private JList list1;
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
