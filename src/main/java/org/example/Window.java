@@ -9,6 +9,8 @@ public class Window {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+        frame.setResizable(false); //Evita que la ventana sea redimensionable
+        frame.setLocationRelativeTo(null); //Centra la ventana en la pantalla
     }
 
     private JPanel JPanel1;
