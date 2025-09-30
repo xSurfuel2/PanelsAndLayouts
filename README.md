@@ -96,12 +96,12 @@ dialog.setVisible(true);
 
 ---
 
-## ✅ Criterios de evaluación (10 pts)
+## ✅ Criterios a seguir
 
-- **Estructura / layouts** (3 pts): Border + Flow + Grid + GridBag correctamente  
-- **Propiedades de distribución** (3 pts): insets, hgap/vgap, anchor, fill, weightx/weighty, preferred size  
-- **Comportamiento al redimensionar** (2 pts): CENTER y Notas crecen, EAST estable, botonera alineada  
-- **Presentación / README** (2 pts): wireframe, árbol de paneles, capturas y explicación
+- **Estructura / layouts**: Border + Flow + Grid + GridBag correctamente  
+- **Propiedades de distribución**: insets, hgap/vgap, anchor, fill, weightx/weighty, preferred size  
+- **Comportamiento al redimensionar**: CENTER y Notas crecen, EAST estable, botonera alineada  
+- **Presentación / README**: wireframe, árbol de paneles, capturas y explicación
 
 ---
 
