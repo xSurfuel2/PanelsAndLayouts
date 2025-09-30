@@ -10,9 +10,11 @@
       <grid id="79bcc" binding="headerPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
         <constraints border-constraint="North"/>
         <properties>
-          <background color="-8485753"/>
+          <background color="-1643009"/>
         </properties>
-        <border type="none"/>
+        <border type="line">
+          <color color="-13552585"/>
+        </border>
         <children>
           <component id="f0e87" class="javax.swing.JLabel" binding="icon">
             <constraints/>
@@ -25,7 +27,7 @@
             <constraints/>
             <properties>
               <font name="JetBrains Mono" size="14" style="1"/>
-              <foreground color="-13947600"/>
+              <foreground color="-15329253"/>
               <text value="Apple"/>
             </properties>
           </component>
@@ -50,6 +52,8 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <background color="-13947600"/>
+                  <foreground color="-393219"/>
                   <text value="Dashboard"/>
                 </properties>
               </component>
@@ -68,6 +72,8 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <background color="-13552585"/>
+                  <foreground color="-393219"/>
                   <text value="Usuarios"/>
                 </properties>
               </component>
@@ -86,6 +92,8 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <background color="-13552585"/>
+                  <foreground color="-393219"/>
                   <text value="Informes"/>
                 </properties>
               </component>
@@ -104,6 +112,8 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <background color="-13552585"/>
+                  <foreground color="-393219"/>
                   <text value="Ajustes"/>
                 </properties>
               </component>
@@ -122,6 +132,8 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
+                  <background color="-13552585"/>
+                  <foreground color="-393219"/>
                   <text value="Ayuda"/>
                 </properties>
               </component>
@@ -377,11 +389,36 @@
           </tabbedpane>
         </children>
       </grid>
-      <grid id="20856" binding="buttonBar" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="2">
+      <grid id="20856" binding="buttonBar" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
         <constraints border-constraint="South"/>
         <properties/>
         <border type="none"/>
-        <children/>
+        <children>
+          <component id="7e491" class="javax.swing.JButton" binding="cancelarButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <background color="-13552585"/>
+              <foreground color="-393219"/>
+              <text value="Cancelar"/>
+            </properties>
+          </component>
+          <component id="4d2f" class="javax.swing.JButton" binding="limpiarButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <background color="-13552585"/>
+              <foreground color="-393219"/>
+              <text value="Limpiar"/>
+            </properties>
+          </component>
+          <component id="af707" class="javax.swing.JButton" binding="guardarButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <background color="-13552585"/>
+              <foreground color="-393219"/>
+              <text value="Guardar"/>
+            </properties>
+          </component>
+        </children>
       </grid>
     </children>
   </grid>

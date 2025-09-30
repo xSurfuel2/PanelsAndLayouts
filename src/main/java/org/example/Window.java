@@ -43,6 +43,9 @@ public class Window {
     private JTextArea textArea1;
     private JTextArea estoEsUnResumenTextArea;
     private JList list1;
+    private JButton cancelarButton;
+    private JButton limpiarButton;
+    private JButton guardarButton;
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
