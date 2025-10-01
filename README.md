@@ -149,7 +149,7 @@ frame.setResizable(false); // Evita que la ventana sea redimensionable
 Aquí podemos ver la primera pestaña del JTabbedPane, que engloba un textArea.
 
 ```
-## Capturas de JTabbedPane
+## JTabbedPane 2
 
 ![xSurfuel2](capturas/tabbed2.png)
 
@@ -158,7 +158,25 @@ Aquí podemos ver la primera pestaña del JTabbedPane, que engloba un textArea.
 Aquí podemos ver la segunda pestaña del JTabbedPane, que contiene unJlist
 
 ```
+## Dialog
 
+![xSurfuel2](capturas/dialog.png)
+
+Aquí podemos ver el Dialog que se abre al pulsar el botón guardar. El siguiente código es necesario para abrirlo:
+
+```
+public Window() {
+        // Inicialización de componentes (puede ser generada por el GUI Designer)
+        guardarButton.addActionListener(e -> {
+            DialogConfirmacion dialog = new DialogConfirmacion();
+            dialog.setModal(true);
+            dialog.pack();
+            dialog.setLocationRelativeTo(null);
+            dialog.setVisible(true);
+
+        });
+    }
+```
 
 
 
