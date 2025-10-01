@@ -146,6 +146,8 @@ frame.setResizable(false); // Evita que la ventana sea redimensionable
 
 Aquí podemos ver la primera pestaña del JTabbedPane, que engloba un textArea.
 ```
+---
+
 ```
 ## Capturas de JTabbedPane
 
@@ -153,9 +155,11 @@ Aquí podemos ver la primera pestaña del JTabbedPane, que engloba un textArea.
 
 Aquí podemos ver la segunda pestaña del JTabbedPane, que contiene unJlist
 
-```java
+```
+java
 frame.setResizable(false); // Evita que la ventana sea redimensionable
 
+```
 ---
 
 ## 📌 Chuleta rápida IntelliJ GUI Designer
