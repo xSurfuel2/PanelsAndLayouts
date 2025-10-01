@@ -6,7 +6,7 @@ Diseñar una interfaz siguiendo un **wireframe** y un árbol de contenedores, us
 - FlowLayout
 - GridLayout
 - GridBagLayout
-- + JDialog modal
+- JDialog modal
 
 Entregar capturas, esquema y breve explicación (RA1 y RA4).
 
