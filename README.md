@@ -1,33 +1,31 @@
-# 🖥️ Ejercicio Tema 2: Paneles y Layouts como profesionales
+# 🖥️ Tarea Módulo 2: Paneles y Layouts como profesionales
 
-Este proyecto consiste en diseñar una **interfaz gráfica** a partir de un wireframe y un árbol de contenedores, usando **JPanel** y diferentes **layouts** de Swing en Java.  
-Se practican **BorderLayout, FlowLayout, GridLayout y GridBagLayout** en una sola ventana y un **JDialog modal**.
+**📅 Fecha de entrega:** 1 de octubre a las 23:59
+**💯 Puntos:** 10
+
+## 📌 Objetivo
+Diseñar una interfaz siguiendo un **wireframe** y un árbol de contenedores, usando conscientemente JPanel y layouts:
+- BorderLayout
+- FlowLayout
+- GridLayout
+- GridBagLayout
+- + JDialog modal
+
+Entregar capturas, esquema y breve explicación (RA1 y RA4).
 
 ---
 
-## 🎯 Objetivos
+## 📝 Planificación en papel (10 min)
+**Ventana: Gestor de usuarios**
 
-- Elegir conscientemente cuántos JPanel usar y qué layout conviene en cada zona.  
-- Construir una ventana “Gestor de usuarios” fiel al wireframe.  
-- Practicar **propiedades de distribución**: insets, weightx/weighty, fill, anchor, alignment.  
-- Crear un diálogo modal de confirmación (sin lógica aún).
+### 🖼️ Wireframe
+- **Header (NORTH):** título + icono
+- **Lateral (WEST):** 5 botones de navegación (Dashboard, Usuarios, Informes, Ajustes, Ayuda)
+- **Centro (CENTER):** Formulario con 2 columnas (Nombre, Email, Rol, Activo, Notas)
+- **Derecha (EAST):** Previsualización con JTabbedPane (Resumen, Logs)
+- **Barra inferior (SOUTH):** botones Cancelar, Limpiar, Guardar alineados a la derecha
 
----
-
-## 📝 Planificación
-
-### 1️⃣ Boceto y árbol de contenedores
-
-**Wireframe de la ventana “Gestor de usuarios”**:
-
-- **Header (NORTH)**: título + icono  
-- **Navegación (WEST)**: 5 botones (Dashboard, Usuarios, Informes, Ajustes, Ayuda)  
-- **Formulario (CENTER)**: etiquetas + campos (Nombre, Email, Rol, Activo, Notas)  
-- **Previsualización (EAST)**: `JTabbedPane` con pestañas “Resumen” y “Logs”  
-- **Botonera (SOUTH)**: Cancelar, Limpiar, Guardar, alineados a la derecha  
-
-**Árbol de contenedores**:
-
+### 🌳 Árbol de contenedores
 ```
 JFrame (BorderLayout)
  ├─ NORTH: headerPanel (FlowLayout)
@@ -37,44 +35,62 @@ JFrame (BorderLayout)
  └─ SOUTH: buttonBar (FlowLayout RIGHT)
 ```
 
-**Propiedades clave**: fuentes, tooltips, gaps, insets, alignment, fill, weightx/weighty.
+### 🔑 Componentes clave
+- Fuentes, tooltips, gaps, insets
+- weightx/weighty, fill, anchor
+
+⚠️ Solo pasar a IntelliJ cuando el esquema esté aprobado.
 
 ---
 
 ## 🛠️ Construcción en IntelliJ GUI Designer
 
-### Header (NORTH)
-- JPanel → FlowLayout  
-- JLabel con icono + texto: `"Gestor de usuarios"`, fuente **Bold 18**  
-- Opcional: `JSeparator` debajo
+### 1️⃣ Crear formulario y root panel
+- New → GUI Form → GestorUsuarios
+- Root panel → Right click → Set Layout → BorderLayout
 
-### Navegación (WEST)
-- JPanel → GridLayout 5x1, vgap=5  
-- 5 JButton: Dashboard, Usuarios, Informes, Ajustes, Ayuda  
-- Propiedad: **Same Size Horizontally**  
+### 2️⃣ Header (NORTH)
+- JPanel → NORTH
+- Layout: FlowLayout
+- JLabel (icono + título) → text="Gestor de usuarios", font=Bold 18, icon opcional
+- (Opcional) JSeparator debajo
 
-### Formulario (CENTER) – GridBagLayout
-- Columnas de etiquetas y campos  
-- Campos: `JTextField`, `JComboBox`, `JCheckBox`, `JTextArea` en `JScrollPane`  
-- Insets: 5px, anchor=WEST, fill HORIZONTAL/BOTH, weightx=1, weighty=1 en Notas
+### 3️⃣ Navegación (WEST)
+- JPanel → WEST
+- Layout: GridLayout 5x1, vgap=5
+- 5 JButton: Dashboard, Usuarios, Informes, Ajustes, Ayuda
+- Propiedad: Same Size Horizontally
 
-### Previsualización (EAST)
-- JPanel → BorderLayout  
-- `JTabbedPane` con:
-  - **Resumen** → JTextArea readOnly + JScrollPane  
-  - **Logs** → JTextArea o JList  
-- Preferred Size: 260px de ancho
+### 4️⃣ Formulario (CENTER) – GridBagLayout
+- JPanel → CENTER
+- Layout: GridBagLayout
+- Fila 0: JLabel "Nombre" + JTextField (weightx=1, fill=HORIZONTAL, insets=5)
+- Fila 1: JLabel "Email" + JTextField
+- Fila 2: JLabel "Rol" + JComboBox (Admin, Editor, Invitado)
+- Fila 3: JLabel "Activo" + JCheckBox
+- Fila 4: JLabel "Notas" + JScrollPane con JTextArea (weighty=1, fill=BOTH)
+- Alineación de etiquetas: anchor=WEST
 
-### Botonera (SOUTH)
-- JPanel → FlowLayout RIGHT  
-- Botones: Cancelar, Limpiar, Guardar  
-- Propiedad: Same Size Horizontally  
-- Default Button = Guardar (opcional)
+### 5️⃣ Previsualización (EAST)
+- JPanel → EAST → BorderLayout
+- JTabbedPane → CENTER
+  - Pestaña 1: "Resumen" → JTextArea readOnly dentro de JScrollPane
+  - Pestaña 2: "Logs" → JTextArea o JList
+- Preferred size ≈ 260px ancho
 
-### Diálogo modal de confirmación (JDialog)
-- JLabel: “¿Guardar cambios?”  
-- Botones: Aceptar, Cancelar  
-- Abrir desde el JFrame:  
+### 6️⃣ Botonera (SOUTH)
+- JPanel → SOUTH → FlowLayout RIGHT
+- JButton: Cancelar, Limpiar, Guardar
+- Same Size Horizontally
+- Default Button: Guardar (opcional)
+
+---
+
+## 🔔 Diálogo modal de confirmación (JDialog)
+- GUI Form → DialogConfirmacion
+- JLabel: "¿Guardar cambios?"
+- JButton: Aceptar, Cancelar
+- Mostrar al pulsar Guardar:
 ```java
 dialog.setModal(true);
 dialog.pack();
@@ -83,41 +99,47 @@ dialog.setVisible(true);
 
 ---
 
-## 📷 Capturas y entrega
-
-- Wireframe dibujado (foto/escaneo)  
-- Árbol de contenedores con layouts  
-- Vista general de la ventana  
-- Redimensionada (CENTER y Notas crecen)  
-- Pestañas del JTabbedPane  
-- Diálogo modal abierto  
-- Mini tabla con propiedades clave (insets, weightx, fill, alignment…)  
-- Enlace a GitHub con `.form`, `.java` y PDF de planificación
+## ⚙️ Ajustes de comportamiento
+- GridLayoutManager: Size Policy = Can grow, usar weightx/weighty en GridBagLayout
+- FlowLayout: respetar tamaño preferido
+- BorderLayout: CENTER crece, EAST/WEST conservan preferred width
+- Para mover componentes: Ctrl+X → panel destino → Ctrl+V
 
 ---
 
-## ✅ Criterios a seguir
-
-- **Estructura / layouts**: Border + Flow + Grid + GridBag correctamente  
-- **Propiedades de distribución**: insets, hgap/vgap, anchor, fill, weightx/weighty, preferred size  
-- **Comportamiento al redimensionar**: CENTER y Notas crecen, EAST estable, botonera alineada  
-- **Presentación / README**: wireframe, árbol de paneles, capturas y explicación
-
----
-
-## 🎯 Retos opcionales
-
-- Añadir un **JMenuBar** (Archivo / Editar / Ayuda)  
-- Cambiar botonera a `GridLayout(1,3)` y compararla con Flow RIGHT  
-- Formulario solo con GridBagLayout y gridwidth=2 para Notas  
+## 📷 Entrega
+- Wireframe dibujado (foto o escaneo)
+- Árbol de contenedores con layouts y justificación
+- Capturas:
+  - Vista general
+  - Redimensionada
+  - Pestañas del JTabbedPane
+  - Diálogo modal abierto
+- Mini tabla con propiedades clave (insets, weightx, fill, alignment)
+- Enlace GitHub con .form, .java y PDF planificación
 
 ---
 
-## ⚡ Chuleta rápida IntelliJ GUI Designer
+## 🏆 Criterios de evaluación (10 pts)
+- **3 pts:** Estructura/layouts elegidos (Border, Flow, Grid, GridBag)
+- **3 pts:** Uso de propiedades de distribución (insets, hgap/vgap, anchor, fill, weightx/y, preferred size)
+- **2 pts:** Comportamiento al redimensionar (CENTER y Notas crecen, EAST estable, botonera alineada)
+- **2 pts:** Presentación/README: wireframe, árbol de paneles, capturas, explicación
 
-- Cambiar layout: Right click panel → Set Layout  
-- Mover componente: Ctrl+X → panel destino → Ctrl+V  
-- Igualar tamaños: Same Size Horizontally/Vertically  
-- Márgenes: Insets o Border  
-- Espaciados: hgap, vgap  
-- Campos que crecen: GridBag → weightx=1, fill=HORIZONTAL/BOTH
+---
+
+## ✨ Retos opcionales
+- Añadir JMenuBar arriba (Archivo/Editar/Ayuda)
+- Botonera en GridLayout(1,3) comparado con Flow RIGHT
+- Formulario solo GridBag con gridwidth=2 para Notas
+
+---
+
+## 📌 Chuleta rápida IntelliJ GUI Designer
+- Cambiar layout: Right click panel → Set Layout
+- Mover componente: Ctrl+X → panel destino → Ctrl+V
+- Igualar tamaños: Same Size Horizontally/Vertically
+- Márgenes: insets (GridBag) o border/margin del panel
+- Espaciados: hgap, vgap (Flow/Grid)
+- Hacer crecer campos: GridBag → weightx=1, fill=HORIZONTAL/BOTH
+
