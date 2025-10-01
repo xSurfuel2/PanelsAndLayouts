@@ -135,31 +135,34 @@ dialog.setVisible(true);
 
 Se ha añadido el siguiente código para evitar que la ventana se amplíe:
 
-```java
+```
+java
 frame.setResizable(false); // Evita que la ventana sea redimensionable
 ```
 
 ## JTabbedPane
 
-
 ![xSurfuel2](capturas/tabbed1.png)
 
-Aquí podemos ver la primera pestaña del JTabbedPane, que engloba un textArea.
+
 ```
----
+Aquí podemos ver la primera pestaña del JTabbedPane, que engloba un textArea.
 
 ```
 ## Capturas de JTabbedPane
 
 ![xSurfuel2](capturas/tabbed2.png)
 
+
+```
 Aquí podemos ver la segunda pestaña del JTabbedPane, que contiene unJlist
 
 ```
-java
-frame.setResizable(false); // Evita que la ventana sea redimensionable
 
-```
+
+
+
+
 ---
 
 ## 📌 Chuleta rápida IntelliJ GUI Designer
