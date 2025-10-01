@@ -120,14 +120,6 @@ dialog.setVisible(true);
 
 ---
 
-## 🏆 Criterios de evaluación (10 pts)
-- **3 pts:** Estructura/layouts elegidos (Border, Flow, Grid, GridBag)
-- **3 pts:** Uso de propiedades de distribución (insets, hgap/vgap, anchor, fill, weightx/y, preferred size)
-- **2 pts:** Comportamiento al redimensionar (CENTER y Notas crecen, EAST estable, botonera alineada)
-- **2 pts:** Presentación/README: wireframe, árbol de paneles, capturas, explicación
-
----
-
 ## ✨ Retos opcionales
 - Añadir JMenuBar arriba (Archivo/Editar/Ayuda)
 - Botonera en GridLayout(1,3) comparado con Flow RIGHT
