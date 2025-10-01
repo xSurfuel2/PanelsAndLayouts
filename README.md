@@ -127,6 +127,9 @@ dialog.setVisible(true);
 | Botonera (SOUTH)  | FlowLayout   | alignment=RIGHT, Same Size Horizontally, Default Button=Guardar |
 
 ---
+## 🎞 Chuleta rápida IntelliJ GUI Designer
+
+---
 
 ## 📌 Chuleta rápida IntelliJ GUI Designer
 - Cambiar layout: Right click panel → Set Layout
