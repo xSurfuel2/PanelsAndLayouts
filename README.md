@@ -117,10 +117,14 @@ dialog.setVisible(true);
 
 ---
 
-## ✨ Retos opcionales
-- Añadir JMenuBar arriba (Archivo/Editar/Ayuda)
-- Botonera en GridLayout(1,3) comparado con Flow RIGHT
-- Formulario solo GridBag con gridwidth=2 para Notas
+### 📊 Tabla de propiedades clave
+| Zona              | Layout        | Propiedades principales                          |
+|-------------------|--------------|------------------------------------------------|
+| Header (NORTH)    | FlowLayout   | font=Bold 18, alignment=CENTER, icon opcional   |
+| Navegación (WEST) | GridLayout   | rows=5, cols=1, vgap=5, Same Size Horizontally  |
+| Formulario (CENTER)| GridBagLayout | insets=5,5,5,5; weightx=1 en campos; weighty=1 en notas; anchor=WEST; fill=HORIZONTAL/BOTH |
+| Previsualización (EAST)| BorderLayout | Preferred size=260px, JTabbedPane con pestañas |
+| Botonera (SOUTH)  | FlowLayout   | alignment=RIGHT, Same Size Horizontally, Default Button=Guardar |
 
 ---
 
