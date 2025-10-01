@@ -1,8 +1,5 @@
 # 🖥️ Tarea Módulo 2: Paneles y Layouts como profesionales
 
-**📅 Fecha de entrega:** 1 de octubre a las 23:59
-**💯 Puntos:** 10
-
 ## 📌 Objetivo
 Diseñar una interfaz siguiendo un **wireframe** y un árbol de contenedores, usando conscientemente JPanel y layouts:
 - BorderLayout
@@ -15,7 +12,7 @@ Entregar capturas, esquema y breve explicación (RA1 y RA4).
 
 ---
 
-## 📝 Planificación en papel (10 min)
+## 📝 Planificación en papel
 **Ventana: Gestor de usuarios**
 
 ### 🖼️ Wireframe
