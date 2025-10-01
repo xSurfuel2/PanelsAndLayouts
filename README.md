@@ -1,26 +1,42 @@
 # 🖥️ Tarea Módulo 2: Paneles y Layouts como profesionales
 
-## 📌 Objetivo
-Diseñar una interfaz siguiendo un **wireframe** y un árbol de contenedores, usando conscientemente JPanel y layouts:
-- BorderLayout
-- FlowLayout
-- GridLayout
-- GridBagLayout
-- JDialog modal
+## 📖 Descripción
+Este proyecto consiste en diseñar una interfaz gráfica en **Java Swing** siguiendo un **wireframe** y un árbol de contenedores.  
+El objetivo es practicar con distintos **layouts** (`BorderLayout`, `FlowLayout`, `GridLayout`, `GridBagLayout`) y la creación de un **JDialog modal** para confirmaciones.
 
-Entregar capturas, esquema y breve explicación (RA1 y RA4).
+El ejercicio pone en práctica:
+- 🎨 Diseño de interfaces basado en wireframes.  
+- 🧩 Organización mediante contenedores y layouts.  
+- ⚙️ Uso de propiedades clave (insets, weightx/weighty, fill, anchor).  
+- 🖼️ Capturas de funcionamiento para validar comportamiento al redimensionar.  
+
+---
+
+## 📌 Objetivo
+Diseñar una interfaz siguiendo un **wireframe** y un árbol de contenedores, usando conscientemente:
+- 🔲 `JPanel`  
+- 📐 `BorderLayout`  
+- ➡️ `FlowLayout`  
+- 🧱 `GridLayout`  
+- 🗂️ `GridBagLayout`  
+- 🔔 `JDialog` modal  
+
+Entregar:
+- 🖼️ Wireframe dibujado  
+- 🌳 Árbol de contenedores  
+- 📷 Capturas  
+- 📝 Breve explicación (RA1 y RA4)  
 
 ---
 
 ## 📝 Planificación en papel
-**Ventana: Gestor de usuarios**
 
 ### 🖼️ Wireframe
-- **Header (NORTH):** título + icono
-- **Lateral (WEST):** 5 botones de navegación (Dashboard, Usuarios, Informes, Ajustes, Ayuda)
-- **Centro (CENTER):** Formulario con 2 columnas (Nombre, Email, Rol, Activo, Notas)
-- **Derecha (EAST):** Previsualización con JTabbedPane (Resumen, Logs)
-- **Barra inferior (SOUTH):** botones Cancelar, Limpiar, Guardar alineados a la derecha
+- **Header (NORTH):** título + icono 🏷️  
+- **Lateral (WEST):** 5 botones de navegación (Dashboard, Usuarios, Informes, Ajustes, Ayuda)  
+- **Centro (CENTER):** Formulario con 2 columnas (Nombre, Email, Rol, Activo, Notas)  
+- **Derecha (EAST):** Previsualización con JTabbedPane (Resumen, Logs) 📑  
+- **Barra inferior (SOUTH):** botones Cancelar, Limpiar, Guardar alineados a la derecha 💾  
 
 ### 🌳 Árbol de contenedores
 ```
@@ -33,10 +49,12 @@ JFrame (BorderLayout)
 ```
 
 ### 🔑 Componentes clave
-- Fuentes, tooltips, gaps, insets
-- weightx/weighty, fill, anchor
-
-⚠️ Solo pasar a IntelliJ cuando el esquema esté aprobado.
+- Fuentes 🅰️  
+- Tooltips ℹ️  
+- Gaps ↔️  
+- Insets ↕️  
+- weightx/weighty ⚖️  
+- fill y anchor 🎯  
 
 ---
 
@@ -104,20 +122,39 @@ dialog.setVisible(true);
 
 ---
 
-## 📷 Entrega
-- Wireframe dibujado (foto o escaneo)
-- Árbol de contenedores con layouts y justificación
-- Capturas:
-  - Vista general
-  - Redimensionada
-  - Pestañas del JTabbedPane
-  - Diálogo modal abierto
-- Mini tabla con propiedades clave (insets, weightx, fill, alignment)
-- Enlace GitHub con .form, .java y PDF planificación
+## 📂 Estructura del proyecto
+
+Estructura del proyecto:
+
+```
+PanelsAndLayouts/
+├── .idea/                      # Configuración del proyecto en IntelliJ
+├── capturas/                   # Capturas de pantalla para el README
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── org/example/
+│   │   │       ├── DialogConfirmacion.java
+│   │   │       ├── DialogConfirmacion.form
+│   │   │       ├── Window.java
+│   │   │       └── Window.form
+│   │   └── resources/
+│   │       └── image/
+│   │           ├── apple.png
+│   │           └── apple - copia.png
+│   └── test/
+│       └── java/
+│           └── org/example/
+│               └── AppTest.java
+├── .gitignore
+├── pom.xml                     # Configuración de Maven
+└── README.md                   # Documentación del proyecto
+```
 
 ---
 
 ## 📊 Tabla de propiedades clave
+
 | Zona              | Layout        | Propiedades principales                          |
 |-------------------|--------------|------------------------------------------------|
 | Header (NORTH)    | FlowLayout   | font=Bold 18, alignment=CENTER, icon opcional   |
@@ -127,80 +164,58 @@ dialog.setVisible(true);
 | Botonera (SOUTH)  | FlowLayout   | alignment=RIGHT, Same Size Horizontally, Default Button=Guardar |
 
 ---
+
 ## 🎞 Capturas y explicación
 
-## 🔹 Wireframe inicial
-
+### 🔹 Wireframe inicial
 ![xSurfuel2](capturas/Wireframe.png)
 
+Un **wireframe** es un boceto visual o esquema básico que representa la estructura de una interfaz de usuario.  
+Sirve como guía inicial para planificar dónde se ubicarán los elementos y cómo será la distribución.  
+Esto permite validar ideas antes de invertir en diseño detallado o código.
 
-```
-Un wireframe es un boceto visual o esquema básico que representa la estructura de una interfaz de usuario (como una página web, una app o una ventana de escritorio), sin entrar en detalles de diseño gráfico (colores, tipografías, imágenes).
-
-Sirve como guía inicial para planificar dónde se ubicarán los elementos (botones, menús, formularios, imágenes, etc.) y cómo será la distribución de los contenidos en pantalla.
-
-Esto nos permite validar rápidamente ideas antes de invertir en diseño detallado o código.
-```
-
-## Captura general
-
+### 📷 Captura general
 ![xSurfuel2](capturas/vistaGeneral.png)
 
 Se ha añadido el siguiente código para evitar que la ventana se amplíe:
-
-```
-java
+```java
 frame.setResizable(false); // Evita que la ventana sea redimensionable
 ```
 
-## JTabbedPane
-
+### 🗂️ JTabbedPane
 ![xSurfuel2](capturas/tabbed1.png)
 
-
-```
 Aquí podemos ver la primera pestaña del JTabbedPane, que engloba un textArea.
 
-```
-## JTabbedPane 2
-
+### 🗂️ JTabbedPane 2
 ![xSurfuel2](capturas/tabbed2.png)
 
+Aquí podemos ver la segunda pestaña del JTabbedPane, que contiene un JList.
 
-```
-Aquí podemos ver la segunda pestaña del JTabbedPane, que contiene unJlist
-
-```
-## Dialog
-
+### 🔔 Dialog
 ![xSurfuel2](capturas/dialog.png)
 
-Aquí podemos ver el Dialog que se abre al pulsar el botón guardar. El siguiente código es necesario para abrirlo:
+Aquí podemos ver el Dialog que se abre al pulsar el botón guardar.  
+El siguiente código es necesario para abrirlo:
 
-```
+```java
 public Window() {
-        // Inicialización de componentes (puede ser generada por el GUI Designer)
-        guardarButton.addActionListener(e -> {
-            DialogConfirmacion dialog = new DialogConfirmacion();
-            dialog.setModal(true);
-            dialog.pack();
-            dialog.setLocationRelativeTo(null);
-            dialog.setVisible(true);
-
-        });
-    }
+    guardarButton.addActionListener(e -> {
+        DialogConfirmacion dialog = new DialogConfirmacion();
+        dialog.setModal(true);
+        dialog.pack();
+        dialog.setLocationRelativeTo(null);
+        dialog.setVisible(true);
+    });
+}
 ```
-
-
-
 
 ---
 
 ## 📌 Chuleta rápida IntelliJ GUI Designer
-- Cambiar layout: Right click panel → Set Layout
-- Mover componente: Ctrl+X → panel destino → Ctrl+V
-- Igualar tamaños: Same Size Horizontally/Vertically
-- Márgenes: insets (GridBag) o border/margin del panel
-- Espaciados: hgap, vgap (Flow/Grid)
-- Hacer crecer campos: GridBag → weightx=1, fill=HORIZONTAL/BOTH
-
+- ⚙️ Cambiar layout: Right click panel → Set Layout  
+- ✂️ Mover componente: Ctrl+X → panel destino → Ctrl+V  
+- 📏 Igualar tamaños: Same Size Horizontally/Vertically  
+- ↔️ Márgenes: insets (GridBag) o border/margin del panel  
+- 📐 Espaciados: hgap, vgap (Flow/Grid)  
+- ⬆️⬇️ Hacer crecer campos: GridBag → weightx=1, fill=HORIZONTAL/BOTH  
