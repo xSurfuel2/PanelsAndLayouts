@@ -127,7 +127,14 @@ dialog.setVisible(true);
 | Botonera (SOUTH)  | FlowLayout   | alignment=RIGHT, Same Size Horizontally, Default Button=Guardar |
 
 ---
-## 🎞 Chuleta rápida IntelliJ GUI Designer
+## 🎞 Capturas y explicación
+
+-Captura general:
+[xSurfuel2](https://github.com/xSurfuel2)
+
+-Se ha añadido el siguiente codigo para evitar que la ventana se amplie:
+**frame.setResizable(false); //Evita que la ventana sea redimensionable**
+
 
 ---
 
