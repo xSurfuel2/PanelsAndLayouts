@@ -117,7 +117,7 @@ dialog.setVisible(true);
 
 ---
 
-### 📊 Tabla de propiedades clave
+## 📊 Tabla de propiedades clave
 | Zona              | Layout        | Propiedades principales                          |
 |-------------------|--------------|------------------------------------------------|
 | Header (NORTH)    | FlowLayout   | font=Bold 18, alignment=CENTER, icon opcional   |
@@ -139,7 +139,6 @@ Se ha añadido el siguiente código para evitar que la ventana se amplíe:
 frame.setResizable(false); // Evita que la ventana sea redimensionable
 ```
 
-
 ## JTabbedPane
 
 
@@ -147,10 +146,12 @@ frame.setResizable(false); // Evita que la ventana sea redimensionable
 
 Aquí podemos ver la primera pestaña del JTabbedPane, que engloba un textArea.
 ```
+```
+## Capturas de JTabbedPane
 
-##Capturas de JTabbedPane
+![xSurfuel2](capturas/tabbed2.png)
 
-Aquí podemos ver la primera pestaña del JTabbedPane
+Aquí podemos ver la segunda pestaña del JTabbedPane, que contiene unJlist
 
 ```java
 frame.setResizable(false); // Evita que la ventana sea redimensionable
