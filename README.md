@@ -173,6 +173,7 @@ PanelsAndLayouts/
 Un **wireframe** es un boceto visual o esquema básico que representa la estructura de una interfaz de usuario.  
 Sirve como guía inicial para planificar dónde se ubicarán los elementos y cómo será la distribución.  
 Esto permite validar ideas antes de invertir en diseño detallado o código.
+---
 
 ### 📷 Captura general
 ![xSurfuel2](capturas/vistaGeneral.png)
@@ -181,16 +182,19 @@ Se ha añadido el siguiente código para evitar que la ventana se amplíe:
 ```java
 frame.setResizable(false); // Evita que la ventana sea redimensionable
 ```
+---
 
 ### 🗂️ JTabbedPane
 ![xSurfuel2](capturas/tabbed1.png)
 
 Aquí podemos ver la primera pestaña del JTabbedPane, que engloba un textArea.
+---
 
 ### 🗂️ JTabbedPane 2
 ![xSurfuel2](capturas/tabbed2.png)
 
 Aquí podemos ver la segunda pestaña del JTabbedPane, que contiene un JList.
+---
 
 ### 🔔 Dialog
 ![xSurfuel2](capturas/dialog.png)
