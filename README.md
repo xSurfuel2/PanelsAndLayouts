@@ -140,6 +140,8 @@ frame.setResizable(false); // Evita que la ventana sea redimensionable
 ```
 
 ##JTabbedPane
+
+
 ![xSurfuel2](capturas/tabbed1.png)
 
 Aquí podemos ver la primera pestaña del JTabbedPane, que engloba un textArea.
