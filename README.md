@@ -138,10 +138,11 @@ Se ha añadido el siguiente código para evitar que la ventana se amplíe:
 ```java
 frame.setResizable(false); // Evita que la ventana sea redimensionable
 ```
+
+##JTabbedPane
 ![xSurfuel2](capturas/tabbed1.png)
 
-Se ha añadido el siguiente código para evitar que la ventana se amplíe:
-
+Aquí podemos ver la primera pestaña del JTabbedPane, que engloba un textArea.
 ```
 
 ###Capturas de JTabbedPane
