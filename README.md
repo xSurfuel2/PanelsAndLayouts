@@ -129,6 +129,19 @@ dialog.setVisible(true);
 ---
 ## 🎞 Capturas y explicación
 
+## 🔹 Wireframe inicial
+
+![xSurfuel2](capturas/wireframe.png)
+
+
+```
+Un wireframe es un boceto visual o esquema básico que representa la estructura de una interfaz de usuario (como una página web, una app o una ventana de escritorio), sin entrar en detalles de diseño gráfico (colores, tipografías, imágenes).
+
+Sirve como guía inicial para planificar dónde se ubicarán los elementos (botones, menús, formularios, imágenes, etc.) y cómo será la distribución de los contenidos en pantalla.
+
+Esto nos permite validar rápidamente ideas antes de invertir en diseño detallado o código.
+```
+
 ## Captura general
 
 ![xSurfuel2](capturas/vistaGeneral.png)
