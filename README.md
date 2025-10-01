@@ -131,7 +131,7 @@ dialog.setVisible(true);
 
 ## 🔹 Wireframe inicial
 
-![xSurfuel2](capturas/wireframe.png)
+![xSurfuel2](capturas/Wireframe.png)
 
 
 ```
