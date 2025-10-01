@@ -131,11 +131,12 @@ dialog.setVisible(true);
 
 ![xSurfuel2](capturas/vistaGeneral.png)
 
-**Captura general:
+### 📸 Captura general
 
-**-Se ha añadido el siguiente codigo para evitar que la ventana se amplie:
-**frame.setResizable(false); //Evita que la ventana sea redimensionable**
+Se ha añadido el siguiente código para evitar que la ventana se amplíe:
 
+```java
+frame.setResizable(false); // Evita que la ventana sea redimensionable
 
 ---
 
