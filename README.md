@@ -137,8 +137,11 @@ Se ha añadido el siguiente código para evitar que la ventana se amplíe:
 
 ```java
 frame.setResizable(false); // Evita que la ventana sea redimensionable
-
+```
 ![xSurfuel2](capturas/tabbed.png)
+Se ha añadido el siguiente código para evitar que la ventana se amplíe:
+
+```
 
 ###Capturas de JTabbedPane
 
