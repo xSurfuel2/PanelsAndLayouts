@@ -131,7 +131,7 @@ dialog.setVisible(true);
 
 ![xSurfuel2](capturas/vistaGeneral.png)
 
-###Captura general
+## Captura general
 
 Se ha añadido el siguiente código para evitar que la ventana se amplíe:
 
