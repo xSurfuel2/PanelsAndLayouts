@@ -11,6 +11,7 @@ public class Window {
         frame.setVisible(true);
         frame.setResizable(false); //Evita que la ventana sea redimensionable
         frame.setLocationRelativeTo(null); //Centra la ventana en la pantalla
+
     }
 
     private JPanel JPanel1;
@@ -46,6 +47,19 @@ public class Window {
     private JButton cancelarButton;
     private JButton limpiarButton;
     private JButton guardarButton;
+
+    public Window() {
+        // Inicialización de componentes (puede ser generada por el GUI Designer)
+        guardarButton.addActionListener(e -> {
+            DialogConfirmacion dialog = new DialogConfirmacion();
+            dialog.setModal(true);
+            dialog.pack();
+            dialog.setLocationRelativeTo(null);
+            dialog.setVisible(true);
+
+        });
+    }
+
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
