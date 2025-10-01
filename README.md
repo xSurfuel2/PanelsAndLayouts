@@ -130,7 +130,7 @@ dialog.setVisible(true);
 ## 🎞 Capturas y explicación
 
 -Captura general:
-![xSurfuel2](capturas/vistaGeneral)
+![xSurfuel2](capturas/vistaGeneral.png)
 
 -Se ha añadido el siguiente codigo para evitar que la ventana se amplie:
 **frame.setResizable(false); //Evita que la ventana sea redimensionable**
