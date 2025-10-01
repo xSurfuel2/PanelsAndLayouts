@@ -131,9 +131,18 @@ dialog.setVisible(true);
 
 ![xSurfuel2](capturas/vistaGeneral.png)
 
-### 📸 Captura general
+###Captura general
 
 Se ha añadido el siguiente código para evitar que la ventana se amplíe:
+
+```java
+frame.setResizable(false); // Evita que la ventana sea redimensionable
+
+![xSurfuel2](capturas/tabbed1.png)
+
+###Capturas de JTabbedPane
+
+Aquí podemos ver la primera pestaña del JTabbedPane
 
 ```java
 frame.setResizable(false); // Evita que la ventana sea redimensionable
